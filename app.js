@@ -12,7 +12,7 @@ app.use(bodyParter.urlencoded({extended:false}));
 
 var filePath = __dirname + '/views/';
 
-mongoose.connect('mongodb://localhost:27017/lab6',function(err){
+mongoose.connect('mongodb://0.0.0.0:27017/lab6',function(err){
     if(err){
         console.log(err);
         throw err;
